@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{motion.motion}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  .alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>RI Debate Webpage</h1>
+  <p>since 1886</p>
+  <br>
+  <a href="{{url_for('home')}}">Back to home</a>
+  <br>
+  <br>
+  <a href="{{url_for('motions_index')}}">Back to motion index</a>
+</div>
+<br>
+<div class="jumbotron" style="background-color:#C04040">
+ <b><h3> Motion Title: </h3></b>
+ <p> {{motion.motion}} </p>
+</div>
+<br>
+<div class="jumbotron" style="background-color:#00FF00">
+ <b><h3> Definitions: </h3></b>
+ <p> {{motion.definitions}} </p>
+</div>
+<br>
+<div class="jumbotron" style="background-color:#40C0C0">
+ <b><h3> Stances: </h3></b>
+ <p> {{motion.stances}} </p>
+</div>
+<br>
+<div class="jumbotron" style="background-color:	#8080C0">
+ <b><h3> Ideal Case(s): </h3></b>
+ <p> {{motion.ideal_case}} </p>
+</div>
+<br>
+<h5>Only administrators can make edits. {{admin_status}}</h5>
+
+<form method = "POST">
+<br>
+Input definitions here:
+<br>
+<textarea rows="20" cols="50" name="definitions" value="{{request.form.definitions}}">{{motion.definitions}}
+</textarea>
+<br>
+
+<br>
+<br>
+Input stances here:
+<br>
+<textarea rows="20" cols="50" name="stances" value="{{request.form.stances}}">{{motion.stances}}
+</textarea>
+<br>
+
+<br>
+<br>
+
+Input ideal case(s) here:
+<br>
+<textarea rows="20" cols="50" name="ideal_case" value="{{request.form.ideal_case}}">{{motion.ideal_case}}
+</textarea>
+<br>
+<button type="submit" value="Confirm">Confirm</button>
+</form>
+
+
+
+
+
+</nav>
+
+
+  </div>
+</div>
+
+
+</body>
+</html>

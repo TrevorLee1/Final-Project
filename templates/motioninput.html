@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Motion Input</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  .alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>RI Debate Webpage</h1>
+  <p>since 1886</p>
+</div>
+<br>
+
+<p>Please input your motion below and indicate the motion details.<p>
+
+<br>
+
+<form method="POST">
+  Motion <input type="text" name="motion">
+  <input type="submit">
+
+<br>
+
+  Motion Type<select name="type">
+    <option value="Retrospective">Retrospective</option>
+    <option value="Policy">Policy</option>
+    <option value="Philosophical">Philosophical</option>
+  </select>
+
+<br>
+
+  Is tournament motion?<select name = "tournament">
+	<option value ="Tournament">Tournament</option>
+	<option value = "Training"> Training </option>
+  </select>
+</form>
+
+<br>
+<p>{{fail_msg}}</p>
+<br>
+<a href="{{url_for('home')}}">Back to home</a>
+<br>
+<br>
+<a href="{{url_for('motions_index')}}">Back to motion index</a>
+
+</body>
+</html>

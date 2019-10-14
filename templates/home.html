@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>RI Debate Webpage</h1>
+  <p>since 1886</p>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Dashboard</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('motions_index')}}">Debate Motion Lists</a></li>
+        <li><a href="{{url_for('logout')}}">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Us</h2>
+      <p> If you have ever debated, you would know how intense the pursuit is—your every move scrutinised by your adversaries, the verdict resting on your ability to think on your feet, not just about how to defeat the opponent, but also to win over hearts and minds in the process.
+
+Debates are an avenue for us to explore the conundrums that can cleave a society, to inspect and interrogate arguments that have significant impact on important policy-making. It is this impetus towards developing a better, more reflexive society that sustains debaters.
+
+But it does not matter whether you have experience debating or are totally new to it. It is the passion to develop yourself as a critical thinker and compelling speaker that is essential in debating— and that’s what we are looking for. If you think you’ve got it, join us today.
+</p>
+
+      <h3>Resources</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="https://debateable.org/" target="_blank">Debateable.org</a></li>
+        <li><a href="https://www.youtube.com/playlist?list=PLzf5bu9570vJECC2vmcTlBXSl-umi_ydI" target="_blank">Singapore WSDC 2019</a></li>
+        <li><a href="https://www.youtube.com/watch?v=tngaDNSlCpU" target="_blank">WUDC 2016 Finals</a></li>
+      </ul>
+      <hr class="hidden-sm hidden-md hidden-lg">
+    </div>
+    <div class="col-sm-8">
+      <h2>Weekly Digest</h2>
+      <h5>China’s complicated relationship with Tibetan Buddhism </h5>
+		<p> Elden Ong:
+
+		Sixty years ago, the 5 century rule of the Dalai Lama came to an end in Tibet. Following a failed uprising by Tibetans, the Dalai Lama was forced to escape to India on March 17 1959. On 23 March , Chinese troops snuffed out the rebellion. Most rebel leaders were executed or imprisoned. It is estimated that 85,000 Tibetans were killed in the war, most in the following weeks of purges.
+
+		Over the years, about 100,000 Tibetans have fled across the border, with many settling in India or Europe as exiles. The day of the rebellion, March 10, is celebrated as a national holiday on both sides of the border. Tibetan exiles commemorate the day as Tibetan Uprising Day, while the Tibetan Autonomous Region recognises the holiday as Serfs Emancipation Day. Sixty years on, the Dalai Lama continues to live in exile in Himachal Pradesh, a stark symbol of China’s complicated relationship with Tibetan Buddhism.
+
+		To Tibetan Buddhists, the Dalai Lama is considered a living incarnation of the Bodhisattva Chenrezig, who rejected Nirvana to assist mankind. Starting in 17th century, the Dalai Lama wielded absolute power over the Tibetan empire, ruling as both a king and a spiritual leader. Following the death of a Dalai Lama, a successor is chosen by a group of oracles and lamas, who identify his reincarnation.
+
+		Born to peasants in Northeastern Tibet, the current Dalai Lama was identified as the 14th incarnation of the Dalai Lama when he was just 2. While he was only supposed assume power at 18, the Invasion of Tibet in 1950 resulted in him being given full power at just 15. With no political experience, the Dalai Lama had to lead negotiations with the Chinese communists while managing affairs in Tibet. The next 9 years were a chaotic time for the Dalai Lama and Tibet. Chinese communists labeled the institution of Tibetan Buddhism as bourgeois and counterrevolutionary. The Red Army maintained a constant presence outside the Potala Palace, the Dalai Lama’s official residence. By Match 1959, rumors had spread that the communists were preparing to abduct or assassinate the Dalai Lama, spurring the Tibetan populace into a doomed popular uprising. The following week, the Dalai Lama fled Tibet and embarked on a 2 week journey to India. Upon reaching India, the Dalai Lama soon realized that Tibet’s isolation had left it without any useful allies. Having rejected offers to join the United Nations, Tibet could make no meaningful appeals for foreign aid. With no other option, the Dalai Lama formed a government in exile in India.
+
+		The first Tibetans who fled with the Dalai lama slept in tents and cloth bags, with no viable source of income. In the following years, an arrangement between India and the Tibetan government allowed exiled Tibetans to work and study in India, but not own property. This has lead to widespread poverty among Tibetan exiles, with many toiling as poorly paid laborers and earning subsistence level wages. Facing the prospect of poverty and lack of opportunities in India, many Tibetans have left India, with some returning to a Tibet their parents fled.
+
+		Indeed, China has made many attempts to win over the support of Tibetan Buddhist. While 99.9% of Tibet’s 6400 monasteries were destroyed during the Cultural Revolution, the Chinese government has set aside $450 million to renovate and rebuild monasteries.  The government has seemingly relaxed restrictions on traditional Buddhist practices. Its efforts are not just restricted to Tibet. China recently spent $3 billion on developing the Nepalese town of Lumbini, the birthplace of the Lord Buddha. The CCP has expressed its intentions to “Sinicize” Buddhism, rebranding China as the capital of Buddhism. The World Buddhist Forum, hosted by China since 2006, invites Buddhists monks from all over the world to discuss Buddhist scripture.
+
+		More ambitious than that, the CCP seeks to control the institution of Tibetan Buddhism itself. After the Dalai Lama named a successor for the Panchen Lama, the second highest ranked Lama in Tibet, in 1995, the CCP replaced him with their own handpicked successor. It seems likely that they will also pick the 15th Dalai Lama as well.
+
+		There is good reason for doing so. There are 244 million Buddhists in China, a number that dwarfs the CCP membership of 89 million. If its efforts co-opt Buddhism into the party succeed, it could give the CCP much legitimacy. It would also be the final nail in the coffin for Tibetan self rule. Over the past 60 years, the Dalai Lama has been a thorn in the side of the CCP, seen by the world as a hero resisting communist repression. With even the Dalai Lama under their thumb, the CCP could extend their reach to even the most religious Tibetans
+
+		Therein lies the conundrum for many Tibetans. Despite its portrayal in popular culture, independent Tibet was never a utopian society. Most Tibetans lived a Hobbesian existence. Infant mortality rates were as high as they were during the middle ages. Most of the population was illiterate with few even receiving an education. Most minor ailments were fatal, with modern medicine being unavailable. The average life expectancy was just 36. So to many Tibetans, the invasion has brought them many opportunities their grandparents could not even have dreamed of having. Today, the literacy rate in Tibet is 65%. Approximately a million Tibetans have been lifted out of poverty. Another half a million were lifted out of serfdom. Even the Dalai Lama himself admitted that Tibetans could lead much better lives living in China. But while Tibetans today have better living standards than ever before in history, many fear that this has just given the Chinese government more tools of control over the Tibetan people  and the loss of Tibetan culture to become irreversible.
+
+		Here are 2 questions to consider:
+
+		i) Has Chinese rule brought more benefits or harms to Tibetans?
+		ii) What is the future of Buddhism in China?
+
+		Further reading:
+
+		Freedom in Exile, The Autobiography of the 14th Dalai Lama </p>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Auspicium Melioris Aevi</p>
+</div>
+
+</body>
+</html>
