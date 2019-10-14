@@ -69,4 +69,4 @@ Potential/Unimplemented features:
 5. More resources
 6. Feedback/tellonym system for public
 
-pls dear lord its like 3am on a school holiday theres still psl training and sl briefings and a play tomorrow my back is aching from sitting so long my eyes are tired and im about ready to die. I really apologise for the late submission i tried my best and i know theres a lot more we could have done but there was just no time. pls forgive us and spare the penalty :((((((()
+Apologies for the late submission
